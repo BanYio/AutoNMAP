@@ -19,54 +19,49 @@ Before using AutoNmap.sh, ensure that the following prerequisites are met:
 
  - **Operating System:** The script is designed for Unix-like operating systems (e.g., Linux, macOS).
 
- - **Nmap:** Ensure that nmap is installed on your system. You can install it using the following command:
-
-bash
-Copiar código
+ - **Nmap:** Ensure that nmap is installed on your system.
+ 
+ You can install it using the following command:
+ ```shell
+sudo apt update
 sudo apt-get install nmap
-Installation
+```
+## Installation
 To install AutoNmap.sh, simply clone the repository to your local machine and make the script executable:
-
-bash
-Copiar código
-git clone https://github.com/yourusername/autonmap.git
-cd autonmap
+```shell
+git clone https://github.com/BanYio/AutoNMAP.git
+cd AutoNMAP
 chmod +x autonmap.sh
-Usage
+```
+## Usage
 Running AutoNmap.sh is straightforward. The script will prompt you to enter the IP address to scan and the path where you want to save the results.
-
-bash
-Copiar código
+```shell
 ./autonmap.sh
-Example Usage
-Run the Script: Execute the script by running:
-
-bash
-Copiar código
+```
+## Example Usage
+**1.** Run the Script: Execute the script by running:
+```shell
 ./autonmap.sh
-Input the Target IP: When prompted, enter the IP address of the target you wish to scan:
-
-css
-Copiar código
-IP to scan: 192.168.1.1
-Specify the Output Directory: Enter the path where you want to save the scan results:
-
-javascript
-Copiar código
-Path to save results (For example, /path/to/save): /home/user/scans
-View the Results: The script will perform a full TCP port scan followed by a detailed service scan on the open ports. The results will be saved in the specified directory:
-
-javascript
-Copiar código
-Open Ports: 22,80,443
+```
+**2.** Input the Target IP: When prompted, enter the IP address of the target you wish to scan:
+```shell
+IP to scan: 172.17.0.2
+```
+**3.** Specify the Output Directory: Enter the path where you want to save the scan results:
+```shell
+Path to save results (For example, /path/to/save): /home/user/target
+```
+**4.** View the Results: The script will perform a full TCP port scan followed by a detailed service scan on the open ports. The results will be saved in the specified directory:
+```shell
+Open Ports: 22,80
 Results saved in: /home/user/scans/scan.txt
-Check the Results: You can view the scan results by opening the scan.txt file in your specified directory:
-
-bash
-Copiar código
+```
+**5.** Check the Results: You can view the scan results by opening the scan.txt file in your specified directory:
+```shell
 cat /home/user/scans/scan.txt
-Summary
+```
+## Summary
 AutoNmap.sh is a handy tool for automating nmap scans, making it easier to perform network reconnaissance efficiently. With its ability to quickly identify open ports and provide detailed service information, it's a valuable addition to any security professional's toolkit.
 
-Disclaimer
+## Disclaimer
 Use this tool responsibly and only on networks and systems for which you have explicit permission to test. Unauthorized scanning is illegal and unethical.
