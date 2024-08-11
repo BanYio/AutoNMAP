@@ -39,6 +39,8 @@ Running AutoNmap.sh is straightforward. The script will prompt you to enter the 
 ./autonmap.sh
 ```
 ## Example Usage
+![image](https://github.com/user-attachments/assets/22d91053-7bcb-444a-9697-b15057e7d478)
+
 **1.** Run the Script: Execute the script by running:
 ```shell
 ./autonmap.sh
